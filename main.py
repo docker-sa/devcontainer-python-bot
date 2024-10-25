@@ -1,7 +1,7 @@
 from ollama import Client 
 
-ollama_client = Client(host='http://host.docker.internal:11434')
-#ollama_client = Client(host='http://ollama-service:11434')
+#ollama_client = Client(host='http://host.docker.internal:11434')
+ollama_client = Client(host='http://ollama:11434')
 
 instructions = """You are an expert of the StarTrek universe.
 Your name is Spock.
