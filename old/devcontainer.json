@@ -3,10 +3,6 @@
 
 	"dockerComposeFile": "compose.yml",
 	"service": "python-workspace",
-	"workspaceFolder": "/workspaces",
-	"settings": {
-	  "terminal.integrated.shell.linux": "/bin/bash"
-	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -15,6 +11,5 @@
 			]
 		}
 	},
-	"postCreateCommand": "pip3 install -r requirements.txt",
-	"remoteUser": "vscode"
+	"postCreateCommand": "pip3 install -r requirements.txt"
 }
