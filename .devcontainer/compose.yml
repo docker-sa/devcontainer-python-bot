@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile.python
       args:
-        - USER_NAME="bob"
+        - USER_NAME=${USER}
     volumes:
       - ../..:/workspaces:cached      
     command: sleep infinity
