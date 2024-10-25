@@ -5,15 +5,15 @@ services:
       context: .
       dockerfile: Dockerfile.python
       args:
-        - USER_NAME=bob
-    volumes:
-      - ../..:/workspaces:cached      
+        - USER_NAME=k33g
+    #volumes:
+    #  - ../..:/workspaces:cached      
     command: sleep infinity
 
   ollama:
     image: ollama/ollama:0.3.13
-    volumes:
-      - ollama-data:/root/.ollama
+    #volumes:
+    #  - ollama-data:/root/.ollama
     ports:
       - 11434:11434
 
@@ -24,8 +24,8 @@ services:
   #    ollama:
   #      condition: service_started
 
-volumes:
-  ollama-data:
+#volumes:
+#  ollama-data:
 
 
   #download-llm-data:
