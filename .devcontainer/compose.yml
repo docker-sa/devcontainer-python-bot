@@ -1,15 +1,11 @@
 services:
 
   python-workspace:
-    build:
-      context: .
-      dockerfile: Dockerfile.python
-      args:
-        - USER_NAME=k33g
+    image: python:3.9
     command: sleep infinity
 
   ollama:
-    image: ollama/ollama:0.3.13
+    image: ollama/ollama:0.5.3
     ports:
       - 11434:11434
 
